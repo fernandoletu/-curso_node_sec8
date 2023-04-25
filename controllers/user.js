@@ -33,8 +33,11 @@ const userPut = (req, res = response) => {
 }
 
 const userDelete = (req, res = response) => {
+    const id = req.params.id
+
     res.status(200).json({
-        msg: 'delete'
+        msg: 'delete',
+        id
     })
 }
 
